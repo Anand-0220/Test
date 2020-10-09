@@ -1,0 +1,200 @@
+Get your computer ready for machine learning: How, what and why you should use Anaconda, Miniconda and Conda
+Anaconda? What are we playing? Snakes and ladders? No. We’re getting ready our computer ready for machine learning.
+Daniel Bourke
+Daniel Bourke
+Follow
+Oct 5, 2019 · 17 min read
+Flowchart showing how you can get setup with Anaconda and Miniconda
+Flowchart showing how you can get setup with Anaconda and Miniconda
+This big bad beast is what we’re going to cover in this article. Check the full interactive version here.
+
+This article will go through what Anaconda is, what Minconda is and what Conda is, why you should know about them if you’re a data scientist or machine learning engineer and how you can use them.
+
+Your computer is capable of running many different programs and applications. However, when you want to create or write your own, such as, building a machine learning project, it’s important to set your computer up in the right way.
+
+Let’s say you wanted to work with a dataset of patient records to try and predict who had heart disease or not. You’ll need a few tools to do this.
+
+One for exploring the data, another for making a predictive model, one for making graphs to present your findings to others and one more to run experiments and put all the others together.
+
+If you’re thinking, I don’t even know where to start, don’t worry, you’re not alone. Many people have this problem. Luckily, this is where Anaconda, Miniconda and Conda come in.
+
+Anaconda, Miniconda and Conda are tools which help you manage your other tools. We’ll get into the specifics of each shortly. Let’s start with why they’re important.
+Why are Anaconda, Miniconda and Conda important?
+Sketch of the scenario Anaconda, Miniconda and Conda help to solve.
+Sketch of the scenario Anaconda, Miniconda and Conda help to solve.
+Anaconda, Miniconda and Conda help to create a shareable environment where you can conduct experiments so your colleague (or your future self) can reproduce them later.
+
+A lot of machine learning and data science is experimental. You try something and it doesn’t work, then you keep trying other things until something works or nothing works at all.
+
+If you were doing these experiments on your own and you eventually find something which works, you’ll probably want to be able to do it again.
+
+The same goes for if you wanted to share your work. Whether it be with a colleague, team or the world through an application powered by your machine learning system.
+
+Anaconda, Miniconda and Conda provide the ability for you to share the foundation on which your experiment is built on.
+
+Anaconda, Miniconda and Conda ensure that if someone else wanted to reproduce your work, they’d have the same tools as you.
+
+So whether you’re working solo, hacking away at a machine learning problem, or working in a team of data scientists finding insights on an internet-scale dataset, Anaconda, Miniconda and Conda provide the infrastructure for a consistent experience throughout.
+What are Anaconda, Miniconda and Conda?
+
+Anaconda and Miniconda are software distributions. Anaconda comes with over 150 data science packages, everything you could imagine, whereas, Miniconda comes with a handful of what’s needed.
+
+A package is a piece of code someone else has written which can be run and often serves a specific purpose. You can consider a package as a tool you can use for your own projects.
+
+Packages are helpful because without them, you would have to write far more code to get what you need done. Since many people have similar problems, you’ll often find a group of people have written code to help solve their problem and released it as a package.
+
+Conda is a package manager. It helps you take care of your different packages by handling installing, updating and removing them.
+Anaconda is the hardware store of data science tools, Miniconda is the workbench and Conda is the assistant
+Anaconda is the hardware store of data science tools, Miniconda is the workbench and Conda is the assistant
+Anaconda contains all of the most common packages (tools) a data scientist needs and can be considered the hardware store of data science tools. Miniconda is more like a workbench, you can customise it with the tools you want. Conda is the assistant underlying Anaconda and Miniconda. It helps you order new tools and organise them when you need.
+
+These aren’t the only ones. There’s Pip, Pipenv and others too. But we’ll focus on Anaconda, Miniconda and Conda. They’ll be more than enough to get you started.
+
+    Anaconda can be thought of the data scientists hardware store. It’s got everything you need. From tools for exploring datasets, to tools for modelling them, to tools for visualising what you’ve found. Everyone can access the hardware store and all the tools inside.
+    Miniconda is the workbench of a data scientist. Every workbench starts clean with only the bare necessities. But as a project grows, so do the number of tools on the workbench. They get used, they get changed, they get swapped. Each workbench can be customised however a data scientist wants. One data scientists workbench may be completely different to another, even if they’re on the same team.
+    Conda helps to organise all of these tools. Although Anaconda comes with many of them ready to go, sometimes they’ll need changing. Conda is like the assistant who takes stock of all the tools. The same goes for Miniconda.
+
+Another term for a collection of tools or packages is environment. The hardware store is an environment and each individual workbench is an environment.
+
+For example, if you’re working on a machine learning problem and find some insights using the tools in your environment (workbench), a teammate may ask you to share your environment with them so they can reproduce your results and contribute to the project.
+Should you use Anaconda or Miniconda?
+flowchart showing which to choose, Anaconda or Miniconda
+flowchart showing which to choose, Anaconda or Miniconda
+Downloading and installing Anaconda is the fastest way to get started with any data science or machine learning project. However, if you don’t have the disk space for all of what comes with Anaconda (a lot, including things you probably won’t use), you might want to consider Miniconda. See the full-size interactive version of this image here.
+
+Use Anaconda:
+
+    If you’re after a one size fits all approach which works out of the box for most projects, have 3 GB of space on your computer.
+
+Use Miniconda:
+
+    If you don’t have 3 GB of space on your computer and prefer a setup has only what you need.
+
+Your main consideration when starting out with Anaconda or Miniconda is space on your computer.
+
+If you’ve chosen Anaconda, follow the Anaconda steps. If you’ve chosen Miniconda, follow the Miniconda steps.
+
+Note: Both Anaconda and Miniconda come with Conda. And because Conda is a package manager, what you can accomplish with Anaconda, you can do with Miniconda. In other words, the steps in the Miniconda section (creating a custom environment with Conda) will work after you’ve gone through the Anaconda section.
+
+Getting a data science project up and running quickly using Anaconda
+
+You can think of Anaconda as the hardware store of data science tools.
+
+Download it to your computer and it will bring with it the tools (packages) you need to do much of your data science or machine learning work. If it doesn’t have the package you need, just like a hardware store, you can order it in (download it).
+
+The good thing is, following these steps and installing Anaconda will install Conda too.
+
+Note: These steps are for macOS (since that's my computer). If you're not using macOS, the concepts will be relevant but the code an images a little different.If you're on Windows, check out this guide by Anaconda.
+
+1. Go to the Anaconda distribution page.
+anaconda distrubition homepage
+anaconda distrubition homepage
+What you’ll find on the Anaconda distribution page. Choose the right distribution for your machine.
+
+2. Download the appropriate Anaconda distribution for your computer (will take a while depending on your internet speed). Unless you have a specific reason, it’s a good idea to download the latest version of each (highest number).
+
+In my case, I downloaded the macOS Python 3.7 64-bit Graphical Installer. The difference between the command line and graphical installer is one uses an application you can see, the other requires you to write lines of code. To keep it simple, we’re using the Graphical Installer.
+
+3. Once the download has completed, double click on the download file to go through the setup steps, leaving everything as default. This will install Anaconda on your computer. It may take a couple of minutes and you’ll need up to 3 GB of space available.
+What the installer looks like on my computer (macOS). I’m installing it on my user account.
+What the installer looks like on my computer (macOS). I’m installing it on my user account.
+What the installer looks like on my computer (macOS). I’m installing it on my user account.
+anaconda installer complete page
+anaconda installer complete page
+Once the installation is complete, you can close this window and remove the Anaconda installer.
+
+4. To check the installation, if you’re on a Mac, open Terminal, if you’re on another computer, open a command line.
+
+If it was successful, you’ll see (base) appear next to your name. This means we're in the base environment, think of this as being on the floor of the hardware store.
+
+To see all the tools (packages) you just installed, type the code conda list and press enter. Don't worry, you won't break anything.
+conda list command on terminal
+conda list command on terminal
+Opening Terminal on a Mac and typing conda list and hitting enter will return all of the packages (data science tools) Anaconda installed on our computer. There should be a lot.
+
+What you should see is four columns. Name, version, build and channel.
+
+Name is the package name. Remember, a package is a collection of code someone else has written.
+
+Version is the version number of the package and build is the Python version the package is made for. For now, we won’t worry about either of these but what you should know is some projects require specific version and build numbers.
+
+Channel is the Anaconda channel the package came from, no channel means the default channel.
+output of conda list command
+output of conda list command
+The output of the conda list command. This show the name, version, build and channel of all the packages Anaconda installed.
+
+5. You can also check it by typing python on the command line and hitting enter. This will show you the version of Python you're running as well as whether or not Anaconda is there.
+python interpreter on the command line
+python interpreter on the command line
+If you downloaded and installed Anaconda, when you type python on the command line, you should see the word Anaconda somewhere appear. This means you're using Anaconda's Python package.
+
+To get out of Python (the >>>), type exit() and hit enter.
+
+6. We just downloaded the entire hardware store of data science tools (packages) to our computer.
+
+Right now, they’re located in the default environment called (base), which was created automatically when we installed Anaconda. An environment is a collection of packages or data science tools. We'll see how to create our own environments later.
+the (base) environment activated in the terminal window
+the (base) environment activated in the terminal window
+The current environment (work space). In our case, this indicates we’re using the base environment. (base) is the default environment which gets installed automatically when installing Anaconda.
+
+You can see all of the environments on your machine by typing conda env list (env is short for environment).
+conda env list command output in terminal
+conda env list command output in terminal
+Running the command conda env list returns all of the environments you have setup on your computer. In my case, I have the environment (base), which I'm in as indicated by the * and I have env, which is in the project_1 folder, we'll look into this later.
+
+Okay, now we know we have Anaconda installed, let’s say your goal is to get set up for our project to predict heart disease with machine learning.
+
+After doing some research, you find the tools (packages) you’ll need are:
+
+    Jupyter Notebooks — for writing Python code, running experiments and communicating your work to others.
+    pandas — for exploring and manipulating data.
+    NumPy — for performing numerical operations on data.
+    Matplotlib — for creating visualizations of your findings.
+    scikit-learn — also called sklearn, for building and analysing machine learning models.
+
+If you’ve never used these before, don’t worry. What’s important to know if you’ve followed the steps above and installed Anaconda, these packages have been installed too.
+
+Anaconda comes with many of the most popular and useful data science tools right out of the box. And the ones above are no exception.
+
+7. To really test things, we’ll start a Jupyter Notebook and see if the packages above are available. To open a Jupyter Notebook, type jupyter notebook on your command line and press enter.
+jupyter notebook command on the command line
+jupyter notebook command on the command line
+A command you’ll get very familiar with running during your data science career. This will automatically open up the Jupyter Notebook interface in your browser.
+
+8. You should see the Jupyter Interface come up. It will contain all of the files you have in your current directory. Click on new in the top right corner and select Python 3, this will create a new Jupyter Notebook.
+Jupyter Interface with clicking on ‘new’ to start a new Python 3 notebook
+Jupyter Interface with clicking on ‘new’ to start a new Python 3 notebook
+Once the Jupyter Interface has loaded, you can create a new notebook by hitting the new button in the top right and clicking Python 3.
+
+9. Now we’ll try for the other tools we need.
+
+You can see if pandas is installed via typing the command import pandas as pd and hitting shift+enter (this is how code in a Jupyter cell is run).
+
+If there are no errors, thanks to Anaconda, we can now use pandas for data manipulation.
+
+10. Do the same for NumPy, Matplotlib and scikit-learn packages using the following:
+
+    NumPy — import numpy as np
+    Matplotlib — import matplotlib.pyplot as plt
+    scikit-learn — import sklearn
+
+testing import commands in a Jupyter Notebook
+testing import commands in a Jupyter Notebook
+Installing Anaconda means we’ve also installed some of the most common data science and machine learning tools, such as, Jupyter, pandas, NumPy, Matplotlib and scikit-learn. If this cell runs without errors, you’ve successfully installed Anaconda.
+Summary of Anaconda
+
+This may seem like a lot of steps to get started but they will form the foundation of what you will need going forward as a data scientist or machine learning engineer.
+
+    Why — We use Anaconda to access all of the code other people have written before us so we don’t have to rewrite it ourselves.
+    What — Anaconda provides a hardware store worth of data science tools such as, Jupyter Notebooks, pandas, NumPy and more.
+    How — We downloaded Anaconda from the internet onto our computer and went through an example showing how to get started with the fundamental tools.
+
+The steps we took:
+
+    Downloaded Anaconda from the internet.
+    Installed Anaconda to our computer.
+    Tested in the install in terminal using conda list which showed us all the packages (data science tools) we installed.
+    Loaded a Jupyter Notebook (one of the tools).
+    Performed a final check by importing pandas, NumPy, Matplotlib and sklearn to the Jupyter Notebook.
+
+Image for post
